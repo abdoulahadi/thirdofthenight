@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# 🌙 Last Third of the Night Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📝 Description
 
-## Available Scripts
+Le **Last Third of the Night Calculator** est une application web qui permet de calculer le dernier tiers de la nuit, une période importante dans la tradition islamique pour les prières nocturnes comme le Tahajjud. L'application prend en compte les heures du Maghrib et du Fajr pour déterminer le début du dernier tiers de la nuit ainsi que le milieu de la nuit.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Fonctionnalités
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **🌅 Calcul du dernier tiers de la nuit** : L'application calcule automatiquement le dernier tiers de la nuit en fonction des heures du Maghrib et du Fajr.
+- **📍 Géolocalisation** : L'application peut utiliser votre position pour récupérer automatiquement les heures de prière locales.
+- **📚 Historique** : Les calculs précédents sont enregistrés et peuvent être consultés à tout moment.
+- **🔔 Notifications** : Vous pouvez activer des rappels pour être notifié avant le début du dernier tiers de la nuit.
+- **🌍 Multilingue** : L'application est disponible en plusieurs langues (Français, Arabe, Anglais, Wolof).
+- **🎨 Thèmes personnalisés** : Vous pouvez choisir parmi plusieurs thèmes pour personnaliser l'apparence de l'application.
+- **📤 Partage des résultats** : Vous pouvez partager les résultats du calcul avec d'autres personnes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 Technologies utilisées
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **⚛️ React** : Bibliothèque JavaScript pour la construction d'interfaces utilisateur.
+- **🎬 Framer Motion** : Bibliothèque pour les animations et les transitions.
+- **🎨 Tailwind CSS** : Framework CSS pour le style et la mise en page.
+- **🌐 i18next** : Bibliothèque pour la gestion des langues et la traduction.
+- **📅 Day.js** : Bibliothèque pour la manipulation des dates et des heures.
+- **🕌 API Aladhan** : API pour récupérer les heures de prière en fonction de la localisation.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Pour installer et exécuter ce projet localement, suivez les étapes suivantes :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **📥 Cloner le dépôt** :
+   ```bash
+   git clone https://github.com/abdoulahadi/last-third-calculator.git
+   cd last-third-calculator
+   ```
 
-### `npm run eject`
+2. **📦 Installer les dépendances** :
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **🚀 Démarrer l'application** :
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **🌐 Accéder à l'application** :
+   Ouvrez votre navigateur et accédez à `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🎮 Utilisation
 
-## Learn More
+1. **⏰ Entrez les heures du Maghrib et du Fajr** :
+   - Vous pouvez entrer manuellement les heures du Maghrib et du Fajr.
+   - Vous pouvez également utiliser la géolocalisation pour récupérer automatiquement ces heures.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **🧮 Calculez le dernier tiers de la nuit** :
+   - Cliquez sur le bouton "Calculer" pour obtenir le début du dernier tiers de la nuit et le milieu de la nuit.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **🔔 Activez les rappels** :
+   - Vous pouvez activer des rappels pour être notifié avant le début du dernier tiers de la nuit.
 
-### Code Splitting
+4. **📚 Consultez l'historique** :
+   - Vous pouvez consulter l'historique des calculs précédents.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. **🌍 Changez de langue et de thème** :
+   - Vous pouvez changer la langue de l'application et choisir parmi plusieurs thèmes.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contribuer
 
-### Making a Progressive Web App
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez suivre les étapes suivantes :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **🍴 Forker le dépôt** :
+   - Forkez le dépôt sur GitHub.
 
-### Advanced Configuration
+2. **🌿 Créer une branche** :
+   - Créez une branche pour votre fonctionnalité ou correction de bug.
+   ```bash
+   git checkout -b nom-de-votre-branche
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. **✏️ Faire des modifications** :
+   - Effectuez vos modifications et committez-les.
+   ```bash
+   git commit -m "Votre message de commit"
+   ```
 
-### Deployment
+4. **📤 Pousser les modifications** :
+   - Poussez vos modifications vers votre fork.
+   ```bash
+   git push origin nom-de-votre-branche
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+5. **🔗 Créer une Pull Request** :
+   - Créez une Pull Request sur GitHub pour soumettre vos modifications.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📜 Licence
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+---
+
+## 👤 Auteur
+
+- **Cheikh Abdoul Ahad Mbacké DIOP** - [Votre GitHub](https://github.com/abdoulahadi)
+
+---
+
+## 🙏 Remerciements
+
+- Merci à [Aladhan](https://aladhan.com/) pour leur API d'heures de prière.
+- Merci à [OpenCage Data](https://opencagedata.com/) pour leur service de géocodage.
+
+---
+
+Ce projet a été créé avec ❤️ pour aider les utilisateurs à calculer le dernier tiers de la nuit et à améliorer leur pratique religieuse.
