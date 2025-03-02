@@ -39,6 +39,9 @@ i18next.use(initReactI18next).init({
         confirmClearHistoryMessage: "Êtes-vous sûr de vouloir vider tout l'historique ?",
         cancel: "Annuler",
         confirm: "Confirmer",
+        projectExplanationTitle: "À propos du projet",
+        projectExplanationMessage:
+          "Ce projet a été créé pour aider à calculer le dernier tiers de la nuit, une période importante pour les prières nocturnes comme le Tahajjud. Les calculs sont basés sur les heures du Maghrib et du Fajr.",
       },
     },
     ar: {
@@ -77,6 +80,9 @@ i18next.use(initReactI18next).init({
         confirmClearHistoryMessage: "هل أنت متأكد أنك تريد مسح كل السجل؟",
         cancel: "إلغاء",
         confirm: "تأكيد",
+        projectExplanationTitle: "حول المشروع",
+        projectExplanationMessage:
+          "تم إنشاء هذا المشروع لمساعدة في حساب آخر ثلث الليل، وهي فترة مهمة للصلوات الليلية مثل التهجد. تعتمد الحسابات على أوقات المغرب والفجر.",
       },
     },
     en: {
@@ -115,6 +121,9 @@ i18next.use(initReactI18next).init({
         confirmClearHistoryMessage: "Are you sure you want to clear all history?",
         cancel: "Cancel",
         confirm: "Confirm",
+        projectExplanationTitle: "About the Project",
+        projectExplanationMessage:
+          "This project was created to help calculate the last third of the night, an important time for night prayers like Tahajjud. Calculations are based on Maghrib and Fajr times.",
       },
     },
     wo: {
@@ -153,6 +162,9 @@ i18next.use(initReactI18next).init({
         confirmClearHistoryMessage: "Ndax gëm nga ni bëgg nga fomp jaar-jaar yépp?",
         cancel: "Bàyyi",
         confirm: "Dëggël",
+        projectExplanationTitle: "Lu jëm ci projet bi",
+        projectExplanationMessage:
+          "Ñu ngi defar projet bi ngir jàppale ci xayma ñatteelu pàcc bi mujj ci guddi gi, di waxtu bu am solo ci ñaani guddi yu melni Tahajjud. Xayma yi dañu sukkandikoo ci waxtu Maghrib ak Fajr.",
       },
     },
   },

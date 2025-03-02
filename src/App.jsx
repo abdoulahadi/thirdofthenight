@@ -9,6 +9,7 @@ import Modal from "./components/Modal";
 import dayjs from "dayjs";
 import TranslationWarning from "./components/TranslationWarning";
 import AlertModal from "./components/AlertModal";
+import ProjectExplanation from "./components/ProjectExplanation";
 
 const App = () => {
   const [maghrib, setMaghrib] = useState("");
@@ -140,17 +141,42 @@ const App = () => {
     clearHistory(); 
     setShowClearHistoryModal(false);
   };
-
-  const shareResults = () => {
-    const shareText = `${i18next.t("lastThird")}: ${results.third}\n${i18next.t("midnight")}: ${results.midnight}`;
+  
+const shareResults = () => {
+    if (!results || !city) {
+      alert(i18next.t("error"));
+      return;
+    }
+  
+    const currentDate = dayjs().format("DD/MM/YYYY"); 
+    const shareText = `
+  🌙 *${i18next.t("title")}* - ${city} (${currentDate})
+  
+  ⏳ *${i18next.t("maghrib")}:* ${maghrib}
+  🌅 *${i18next.t("fajr")}:* ${fajr}
+  🌌 *${i18next.t("lastThird")}:* ${results.third}
+  🌃 *${i18next.t("midnight")}:* ${results.midnight}
+  
+  🔗 *Lien vers le site :* ${window.location.href}
+    `.trim(); 
+  
     if (navigator.share) {
-      navigator.share({
-        title: i18next.t("title"),
-        text: shareText,
-      });
+      navigator
+        .share({
+          title: i18next.t("title"),
+          text: shareText,
+        })
+        .then(() => console.log("Partage réussi !"))
+        .catch((error) => console.error("Erreur lors du partage :", error));
     } else {
-        setShowShareErrorModal(true); 
-        return;
+      navigator.clipboard
+        .writeText(shareText)
+        .then(() => {
+          alert(i18next.t("shareSuccess")); 
+        })
+        .catch(() => {
+          alert(i18next.t("shareError"));
+        });
     }
   };
 
@@ -290,7 +316,7 @@ const App = () => {
           </>
         }
       />
-
+        <ProjectExplanation />
          {/*composant TranslationWarning ici */}
          <TranslationWarning />
       </div>
