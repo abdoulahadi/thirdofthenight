@@ -143,24 +143,29 @@ const App = () => {
     setShowClearHistoryModal(false);
   };
 
-const shareResults = () => {
+  const shareResults = () => {
     if (!results || !city) {
       alert(i18next.t("error"));
       return;
     }
-  
+
     const currentDate = dayjs().format("DD/MM/YYYY"); 
     const shareText = `
-  🌙 *${i18next.t("title")}* - ${city} (${currentDate})
-  
-  ⏳ *${i18next.t("maghrib")}:* ${maghrib}
-  🌅 *${i18next.t("fajr")}:* ${fajr}
-  🌌 *${i18next.t("lastThird")}:* ${results.third}
-  🌃 *${i18next.t("midnight")}:* ${results.midnight}
-  
-  🔗 *Lien vers le site :* ${window.location.href}
+🌙 *${i18next.t("title")}* - ${city} (${currentDate})
+
+⏳ *${i18next.t("maghrib")}:* ${maghrib}
+🌅 *${i18next.t("fajr")}:* ${fajr}
+🌌 *${i18next.t("lastThird")}:* ${results.third}
+🌃 *${i18next.t("midnight")}:* ${results.midnight}
+
+📖 *Importance spirituelle :*  
+C'est un moment où Allah exauce les invocations, comme mentionné dans un hadith authentique du Prophète ﷺ :
+
+*"Notre Seigneur descend chaque nuit au ciel le plus bas, lorsqu’il reste le dernier tiers de la nuit, et Il dit : 'Qui M'invoque afin que Je lui réponde ? Qui Me demande afin que Je lui donne ? Qui implore Mon pardon afin que Je le lui accorde ?'"* (Rapporté par Boukhari dans son Sahih n°1145 et Mouslim dans son Sahih n°758).
+
+🔗 *Lien vers le site :* ${window.location.href}
     `.trim(); 
-  
+
     if (navigator.share) {
       navigator
         .share({
@@ -179,7 +184,8 @@ const shareResults = () => {
           alert(i18next.t("shareError"));
         });
     }
-  };
+};
+
 
   const toggleNotification = () => {
     if (!notificationEnabled) {
