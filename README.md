@@ -112,7 +112,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ## 👤 Auteur
 
-- **Cheikh Abdoul Ahad Mbacké DIOP** - [Votre GitHub](https://github.com/abdoulahadi)
+- **Cheikh Abdoul Ahad Mbacké DIOP** - [GitHub](https://github.com/abdoulahadi)
 
 ---
 
