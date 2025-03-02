@@ -10,6 +10,7 @@ import dayjs from "dayjs";
 import TranslationWarning from "./components/TranslationWarning";
 import AlertModal from "./components/AlertModal";
 import ProjectExplanation from "./components/ProjectExplanation";
+import ContactButton from "./components/ContactButton";
 
 const App = () => {
   const [maghrib, setMaghrib] = useState("");
@@ -141,7 +142,7 @@ const App = () => {
     clearHistory(); 
     setShowClearHistoryModal(false);
   };
-  
+
 const shareResults = () => {
     if (!results || !city) {
       alert(i18next.t("error"));
@@ -316,8 +317,9 @@ const shareResults = () => {
           </>
         }
       />
+
+        <ContactButton />
         <ProjectExplanation />
-         {/*composant TranslationWarning ici */}
          <TranslationWarning />
       </div>
     </div>
