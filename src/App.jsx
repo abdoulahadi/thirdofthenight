@@ -15,7 +15,7 @@ const App = () => {
   const [fajr, setFajr] = useState("");
   const [results, setResults] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [loading, setLoading] = useState(false);
   const [notificationEnabled, setNotificationEnabled] = useState(false);
   const [city, setCity] = useState("");
