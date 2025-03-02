@@ -10,7 +10,6 @@ import dayjs from "dayjs";
 import TranslationWarning from "./components/TranslationWarning";
 import AlertModal from "./components/AlertModal";
 import ProjectExplanation from "./components/ProjectExplanation";
-import ContactButton from "./components/ContactButton";
 
 const App = () => {
   const [maghrib, setMaghrib] = useState("");
@@ -323,8 +322,6 @@ C'est un moment où Allah exauce les invocations, comme mentionné dans un hadit
           </>
         }
       />
-
-        <ContactButton />
         <ProjectExplanation />
          <TranslationWarning />
       </div>
